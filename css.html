@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Testing Page</title>
+        <link rel="stylesheet" href="./defaults.css" />
+    </head>
+    <body class="container">
+        <header>
+            <h1>My CSS Testing Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="intro">
+                <h2>Introduction to CSS Styling</h2>
+                <p>
+                    Welcome to my blog dedicated to testing various CSS styles!
+                    This page is designed to showcase different HTML elements
+                    and how they can be styled using CSS. We'll explore
+                    everything from basic text formatting to complex form
+                    layouts and table designs.
+                </p>
+                <p>
+                    Feel free to experiment with the provided HTML and CSS to
+                    see how different styles affect the elements. This is a
+                    great place to learn and test your CSS skills!
+                </p>
+            </section>
+
+            <section id="typography">
+                <h2>Styling Text with CSS</h2>
+                <p>
+                    Typography is a crucial aspect of web design. CSS allows us
+                    to control the appearance of text in numerous ways. Let's
+                    look at some examples:
+                </p>
+
+                <h3>Paragraphs and Basic Text</h3>
+                <p>
+                    This is a standard paragraph. We can change its font, size,
+                    color, and more. It contains
+                    <strong>strong text</strong> for emphasis and
+                    <em>emphasized text</em> for a softer highlight. You can
+                    also include <a href="#">links</a> within paragraphs.
+                </p>
+
+                <h3>Blockquotes</h3>
+                <blockquote>
+                    <p>
+                        Blockquotes are used to cite external sources or
+                        emphasize a large chunk of text. They are typically
+                        indented and may have a different font style.
+                    </p>
+                    <cite>- Someone Famous</cite>
+                </blockquote>
+
+                <h3>Lists</h3>
+                <p>
+                    Lists are great for organizing information. CSS can style
+                    both ordered and unordered lists.
+                </p>
+                <h4>Unordered List</h4>
+                <ul>
+                    <li>Item 1</li>
+                    <li>
+                        Item 2
+                        <ul>
+                            <li>Nested Item 2.1</li>
+                            <li>Nested Item 2.2</li>
+                        </ul>
+                    </li>
+                    <li>Item 3</li>
+                </ul>
+
+                <h4>Ordered List</h4>
+                <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                </ol>
+
+                <h3>Code Blocks</h3>
+                <p>
+                    For displaying code, we use the &lt;pre&gt; and &lt;code&gt;
+                    tags. CSS can style these to make the code more readable.
+                </p>
+                <pre><code>
+/* Example CSS Code */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+</code>
+</pre>
+                <hr />
+            </section>
+
+            <section id="images">
+                <h2>Working with Images</h2>
+                <p>
+                    Images add visual appeal to a webpage. CSS can control their
+                    size, position, and appearance.
+                </p>
+
+                <figure>
+                    <!-- <img
+                        src="https://via.placeholder.com/300x200"
+                        alt="Placeholder Image"
+                    /> -->
+                    <figcaption>
+                        A placeholder image to demonstrate image styling.
+                    </figcaption>
+                </figure>
+
+                <p>Here are some more images with different sizes:</p>
+                <!-- <img
+                    src="https://via.placeholder.com/150x100/FF0000/FFFFFF?text=Small+Image"
+                    alt="Small Image"
+                    class="small-image"
+                />
+                <img
+                    src="https://via.placeholder.com/200x150/00FF00/000000?text=Medium+Image"
+                    alt="Medium Image"
+                    class="medium-image"
+                /> -->
+            </section>
+
+            <section id="forms">
+                <h2>Creating and Styling Forms</h2>
+                <p>
+                    Forms are essential for user interaction. CSS allows us to
+                    style form elements to create a user-friendly interface.
+                </p>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <p>
+                            <label for="name">Name:</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="user_name"
+                                placeholder="Your Name"
+                                required
+                            />
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="user_email"
+                                placeholder="your.email@example.com"
+                            />
+                        </p>
+
+                        <p>
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="user_password"
+                            />
+                        </p>
+
+                        <p>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="user_dob" />
+                        </p>
+
+                        <p>
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="user_gender">
+                                <option value="">
+                                    --Please choose an option--
+                                </option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Interests</legend>
+
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="coding"
+                                name="interests"
+                                value="coding"
+                            />
+                            <label for="coding">Coding</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="reading"
+                                name="interests"
+                                value="reading"
+                            />
+                            <label for="reading">Reading</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="sports"
+                                name="interests"
+                                value="sports"
+                            />
+                            <label for="sports">Sports</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Newsletter Subscription</legend>
+                        <div>
+                            <input
+                                type="radio"
+                                id="subscribe_yes"
+                                name="newsletter"
+                                value="yes"
+                                checked
+                            />
+                            <label for="subscribe_yes">Yes, subscribe me</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="subscribe_no"
+                                name="newsletter"
+                                value="no"
+                            />
+                            <label for="subscribe_no">No, thank you</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="comments">Comments:</label>
+                    </div>
+                    <textarea
+                        id="comments"
+                        name="user_comments"
+                        rows="5"
+                        placeholder="Enter your comments here..."
+                    ></textarea>
+
+                    <p>
+                        <button type="submit">Submit Form</button>
+                        <button type="reset">Reset Form</button>
+                    </p>
+                </form>
+            </section>
+
+            <section id="tables">
+                <h2>Styling Tables</h2>
+                <p>
+                    Tables are used to display data in a structured format. CSS
+                    can make tables more visually appealing and easier to read.
+                </p>
+
+                <table>
+                    <caption>
+                        Monthly Sales Data
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Sales</th>
+                            <th>Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>$1,500</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>$1,800</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>$2,200</td>
+                            <td>$750</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>$1,850</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 CSS Test Blog. All rights reserved.</p>
+            <p>Designed for CSS testing and demonstration.</p>
+        </footer>
+    </body>
+</html>
