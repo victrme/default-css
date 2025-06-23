@@ -85,7 +85,7 @@ select,
 button {
     background-color: #eee;
 }
-select,
+select:active,
 button:active {
     background-color: #ddd;
 }
@@ -99,7 +99,7 @@ fieldset,
 th,
 td,
 hr {
-    border-radius: 2px;
+    border-radius: 3px;
     border: 1px solid #ccc;
 }
 
