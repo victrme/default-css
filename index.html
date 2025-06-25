@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CSS Testing Page</title>
+        <link rel="icon" href="https://victr.me/apple-touch-icon.png" />
         <link rel="stylesheet" href="./defaults.css" />
     </head>
     <body class="container">
@@ -107,36 +108,6 @@ body {
                 <hr />
             </section>
 
-            <section id="images">
-                <h2>Working with Images</h2>
-                <p>
-                    Images add visual appeal to a webpage. CSS can control their
-                    size, position, and appearance.
-                </p>
-
-                <figure>
-                    <!-- <img
-                        src="https://via.placeholder.com/300x200"
-                        alt="Placeholder Image"
-                    /> -->
-                    <figcaption>
-                        A placeholder image to demonstrate image styling.
-                    </figcaption>
-                </figure>
-
-                <p>Here are some more images with different sizes:</p>
-                <!-- <img
-                    src="https://via.placeholder.com/150x100/FF0000/FFFFFF?text=Small+Image"
-                    alt="Small Image"
-                    class="small-image"
-                />
-                <img
-                    src="https://via.placeholder.com/200x150/00FF00/000000?text=Medium+Image"
-                    alt="Medium Image"
-                    class="medium-image"
-                /> -->
-            </section>
-
             <section id="forms">
                 <h2>Creating and Styling Forms</h2>
                 <p>
@@ -186,9 +157,7 @@ body {
                         <p>
                             <label for="gender">Gender:</label>
                             <select id="gender" name="user_gender">
-                                <option value="">
-                                    --Please choose an option--
-                                </option>
+                                <option value="">Choose an option</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
@@ -264,6 +233,7 @@ body {
                     <p>
                         <button type="submit">Submit form</button>
                         <button type="reset">Reset form</button>
+                        <button disabled="">Disabled button</button>
                     </p>
                 </form>
             </section>
@@ -310,6 +280,27 @@ body {
                         </tr>
                     </tfoot>
                 </table>
+            </section>
+
+            <section id="images">
+                <h2>Working with Images</h2>
+                <p>
+                    Images add visual appeal to a webpage. CSS can control their
+                    size, position, and appearance.
+                </p>
+
+                <figure>
+                    <img
+                        src="./assets/coquelicots.jpg"
+                        alt="Champs de coquelicots"
+                    />
+                    <figcaption>
+                        A placeholder image to demonstrate image styling.
+                    </figcaption>
+                </figure>
+
+                <p>Here is another image with a different format:</p>
+                <img src="./assets/crepuscule.jpg" alt="Herbe au crépuscule" />
             </section>
         </main>
 
