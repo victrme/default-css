@@ -1,0 +1,132 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: system-ui;
+	line-height: 1.5;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas {
+	display: block;
+	max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+
+/* Lighter colors */
+body {
+	color: #3e3a3a;
+	background-color: #fff;
+}
+
+/* Add offset to separate 1px border with outline */
+* {
+	outline-offset: 1px;
+}
+
+/* Better link color, disable old visited */
+a,
+a:visited {
+	color: royalblue;
+}
+
+/* Button toggle pointers */
+button {
+	cursor: pointer;
+}
+
+/* Button disabled state */
+button:disabled {
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+/* Less aggressive background colors */
+select,
+input,
+button {
+	background-color: #2221;
+}
+
+select:active,
+button:active {
+	background-color: #2222;
+}
+
+/* Use modern monospace fonts on Windows & MacOS */
+pre,
+code {
+	font-family: Consolas, Monaco, monospace;
+}
+
+/* Less aggressive borders */
+input,
+button,
+textarea,
+select,
+fieldset,
+th,
+td,
+hr {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+/* Improved padding & margin on user action elements */
+input,
+select,
+textarea {
+	padding: 0.2rem;
+	padding-inline-start: 0.5rem;
+}
+
+button {
+	padding: 0.2rem;
+	padding-inline: 0.5rem;
+}
+
+ul,
+ol {
+	padding-inline-start: 1.6rem;
+}
+
+td {
+	padding-block: 0.2rem;
+	padding-inline: 0.5rem;
+}
+
+/* Single border by default */
+table {
+	border-collapse: collapse;
+}
